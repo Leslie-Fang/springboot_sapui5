@@ -23,7 +23,7 @@ openui5:https://openui5.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b
 修改加载静态资源路径：https://www.jianshu.com/p/d127c4f78bb8
 
 
-坑：
+## 坑：
 1. 不能使用thymeleaf(从pom中直接移除),thymeleaf在解析html文件时会把双引号""改成''，这导致这句话不可用，必须要双引号
 2. 不使用thymeleaf，要直接返回html，在web中用@Controller 而不是 @RestController
 
