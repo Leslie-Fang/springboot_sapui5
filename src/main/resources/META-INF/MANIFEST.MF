@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Main-Class: org.intel.dcg.leslie.Application
+Class-Path: lib/spring-boot-1.5.10.RELEASE.jar |
+ | lib/spring-context-4.3.14.RELEASE.jar |
+ | lib/classmate-1.3.4.jar |
+ | lib/groovy-2.4.13.jar |
+ | lib/hibernate-validator-5.3.6.Final.jar |
+ | lib/jackson-annotations-2.8.0.jar |
+ | lib/jackson-core-2.8.10.jar |
+ | lib/jackson-databind-2.8.10.jar |
+ | lib/jboss-logging-3.3.1.Final.jar |
+ | lib/jcl-over-slf4j-1.7.25.jar |
+ | lib/jul-to-slf4j-1.7.25.jar |
+ | lib/log4j-over-slf4j-1.7.25.jar |
+ | lib/logback-classic-1.1.11.jar |
+ | lib/logback-core-1.1.11.jar |
+ | lib/slf4j-api-1.7.25.jar |
+ | lib/snakeyaml-1.17.jar |
+ | lib/spring-aop-4.3.14.RELEASE.jar |
+ | lib/spring-beans-4.3.14.RELEASE.jar |
+ | lib/spring-boot-autoconfigure-1.5.10.RELEASE.jar |
+ | lib/spring-boot-starter-1.5.10.RELEASE.jar |
+ | lib/spring-boot-starter-logging-1.5.10.RELEASE.jar |
+ | lib/spring-boot-starter-tomcat-1.5.10.RELEASE.jar |
+ | lib/spring-boot-starter-web-1.5.10.RELEASE.jar |
+ | lib/spring-core-4.3.14.RELEASE.jar |
+ | lib/spring-expression-4.3.14.RELEASE.jar |
+ | lib/spring-web-4.3.14.RELEASE.jar |
+ | lib/spring-webmvc-4.3.14.RELEASE.jar |
+ | lib/tomcat-annotations-api-8.5.27.jar |
+ | lib/tomcat-embed-core-8.5.27.jar |
+ | lib/tomcat-embed-el-8.5.27.jar |
+ | lib/tomcat-embed-websocket-8.5.27.jar |
+ | lib/validation-api-1.1.0.Final.jar |
+ | lib/spring-boot-devtools-1.5.10.RELEASE.jar
