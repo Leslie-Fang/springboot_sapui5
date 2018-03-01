@@ -32,4 +32,9 @@ Class-Path: lib/spring-boot-1.5.10.RELEASE.jar |
  | lib/tomcat-embed-el-8.5.27.jar |
  | lib/tomcat-embed-websocket-8.5.27.jar |
  | lib/validation-api-1.1.0.Final.jar |
- | lib/spring-boot-devtools-1.5.10.RELEASE.jar
+ | lib/spring-boot-devtools-1.5.10.RELEASE.jar |
+ | lib/commons-codec-1.10.jar |
+ | lib/gson-2.8.2.jar |
+ | lib/javax.ws.rs-api-2.0-m10.jar |
+ | lib/olingo-odata2-api-2.0.10.jar |
+ | lib/olingo-odata2-core-2.0.10.jar

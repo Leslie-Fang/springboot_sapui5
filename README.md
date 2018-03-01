@@ -27,3 +27,19 @@ openui5:https://openui5.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b
 1. 不能使用thymeleaf(从pom中直接移除),thymeleaf在解析html文件时会把双引号""改成''，这导致这句话不可用，必须要双引号
 2. 不使用thymeleaf，要直接返回html，在web中用@Controller 而不是 @RestController
 
+## Odata
+官网： http://www.odata.org/getting-started/basic-tutorial/
+视频教程：https://www.youtube.com/watch?v=z06bl_K6Ckc
+
+## olingo
+官网： https://olingo.apache.org/
+视频教程： https://www.youtube.com/watch?v=9DqTiF9xup4
+
+
+## 下一步
+done: ui5, 可以搭建table，利用mock的server提供odata的数据
+todo： learn springJPA
+todo： JPA+olingo
+https://www.penninkhof.com/2016/02/openui5-boilerplate-based-on-olingo-jpa-and-spring-boot/
+https://blogs.sap.com/2017/11/27/how-to-create-olingo-v2.0-odata-service-with-spring-cloud-in-cloudfoundry/
+
