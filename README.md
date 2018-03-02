@@ -38,6 +38,12 @@ openui5:https://openui5.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b
 
 ## 下一步
 done: ui5, 可以搭建table，利用mock的server提供odata的数据
+
+Two ways:
+1. learn the olingo read doc
+build odata, data source from textfile
+
+2. learn olingo+JPA
 todo： learn springJPA
 todo： JPA+olingo
 https://www.penninkhof.com/2016/02/openui5-boilerplate-based-on-olingo-jpa-and-spring-boot/
