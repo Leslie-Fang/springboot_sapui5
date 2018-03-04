@@ -75,4 +75,10 @@ Class-Path: lib/spring-boot-1.5.10.RELEASE.jar |
  | lib/spring-test-4.3.14.RELEASE.jar |
  | lib/spring-tx-4.3.14.RELEASE.jar |
  | lib/tomcat-jdbc-8.5.27.jar |
- | lib/tomcat-juli-8.5.27.jar
+ | lib/tomcat-juli-8.5.27.jar |
+ | lib/mysql-connector-java-6.0.6.jar |
+ | lib/javax.servlet-api-3.0.1.jar |
+ | lib/javax.persistence-2.0.5.jar |
+ | lib/olingo-odata2-api-annotation-2.0.10.jar |
+ | lib/olingo-odata2-jpa-processor-api-2.0.10.jar |
+ | lib/olingo-odata2-jpa-processor-core-2.0.10.jar

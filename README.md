@@ -43,7 +43,11 @@ Two ways:
 1. learn the olingo read doc
 build odata, data source from textfile
 
-2. learn olingo+JPA
+2. learn JPA
+https://spring.io/guides/gs/accessing-data-jpa/
+http://blog.didispace.com/springbootdata2/
+
+3. learn olingo+JPA
 todo： learn springJPA
 todo： JPA+olingo
 https://www.penninkhof.com/2016/02/openui5-boilerplate-based-on-olingo-jpa-and-spring-boot/
