@@ -15,12 +15,12 @@ public class JPAServiceFactory extends ODataJPAServiceFactory {
     public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
         ODataJPAContext oDataJPAContext = getODataJPAContext();
 
-//        EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
-//
-//        oDataJPAContext.setEntityManagerFactory(factory);
-//        oDataJPAContext.setPersistenceUnitName(DEFAULT_ENTITY_UNIT_NAME);
+        EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
+
+        oDataJPAContext.setEntityManagerFactory(factory);
+        oDataJPAContext.setPersistenceUnitName(DEFAULT_ENTITY_UNIT_NAME);
 //        oDataJPAContext.setJPAEdmExtension(new JPAEdmExtension());
-//        ODataContextUtil.setODataContext(oDataJPAContext.getODataContext());
+        ODataContextUtil.setODataContext(oDataJPAContext.getODataContext());
 
         return oDataJPAContext;
     }
