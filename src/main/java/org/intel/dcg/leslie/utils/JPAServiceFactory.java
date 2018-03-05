@@ -1,10 +1,12 @@
 package org.intel.dcg.leslie.utils;
 
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAContext;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
 import org.apache.olingo.odata2.jpa.processor.api.exception.ODataJPARuntimeException;
+
 
 public class JPAServiceFactory extends ODataJPAServiceFactory {
 
@@ -13,8 +15,7 @@ public class JPAServiceFactory extends ODataJPAServiceFactory {
 
     @Override
     public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
-        ODataJPAContext oDataJPAContext = getODataJPAContext();
-
+        ODataJPAContext oDataJPAContext = this.getODataJPAContext();
         EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
 
         oDataJPAContext.setEntityManagerFactory(factory);
