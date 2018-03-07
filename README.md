@@ -67,7 +67,8 @@ http://localhost:8080/MyODataSample.svc/Cars
 http://localhost:8080/MyODataSample.svc/Cars?$format=json
 
 next step:
-1. learn odata fake car data
-2. bind car odata to the sapui table
-3. use JPA to provide odata
+1. Done: learn odata fake car data
+2. Done: bind car odata to the sapui table
+3. use JPA to provide odata service
+4. bind JPA odata service into the openui5 table
 
