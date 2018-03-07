@@ -48,14 +48,26 @@ https://spring.io/guides/gs/accessing-data-jpa/
 http://blog.didispace.com/springbootdata2/
 
 3. learn olingo+JPA
-todo： learn springJPA
+done： learn springJPA
 todo： JPA+olingo
 https://www.penninkhof.com/2016/02/openui5-boilerplate-based-on-olingo-jpa-and-spring-boot/
 https://blogs.sap.com/2017/11/27/how-to-create-olingo-v2.0-odata-service-with-spring-cloud-in-cloudfoundry/
 
 
 successfully eanble odata:
+查看odata：
+https://www.jianshu.com/p/fb15a819e229
+
+xml:
+http://localhost:8080/sap/index
 http://localhost:8080/MyODataSample.svc
 http://localhost:8080/MyODataSample.svc/$metadata
 http://localhost:8080/MyODataSample.svc/Cars
+查看json格式：
+http://localhost:8080/MyODataSample.svc/Cars?$format=json
+
+next step:
+1. learn odata fake car data
+2. bind car odata to the sapui table
+3. use JPA to provide odata
 

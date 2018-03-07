@@ -1,0 +1,20 @@
+<mvc:View
+        controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <List
+            id="carList"
+            class="sapUiResponsiveMargin"
+            width="auto"
+            items="{
+                 path : 'car>/Cars'
+            }" >
+        <items>
+            <ObjectListItem
+                    title="{car>Model} x {car>Price}" />
+        </items>
+    </List>
+    <Button
+            text="{car>Model}"
+            press="onShowHello"/>
+</mvc:View>

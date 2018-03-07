@@ -41,6 +41,10 @@
       "invoice": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "Invoices.json"
+      },
+      "car": {
+        "type": "sap.ui.model.odata.ODataModel",
+        "uri": "/MyODataSample.svc"
       }
     },
     "resources": {
