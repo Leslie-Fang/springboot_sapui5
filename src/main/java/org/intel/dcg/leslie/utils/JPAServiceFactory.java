@@ -6,25 +6,39 @@ import javax.persistence.Persistence;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAContext;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
 import org.apache.olingo.odata2.jpa.processor.api.exception.ODataJPARuntimeException;
+import org.apache.olingo.odata2.api.ODataService;
+import org.apache.olingo.odata2.api.ODataServiceFactory;
+import org.apache.olingo.odata2.api.edm.provider.EdmProvider;
+import org.apache.olingo.odata2.api.exception.ODataException;
+import org.apache.olingo.odata2.api.processor.ODataContext;
+import org.apache.olingo.odata2.api.processor.ODataSingleProcessor;
 
+public class JPAServiceFactory extends ODataServiceFactory {
 
-public class JPAServiceFactory extends ODataJPAServiceFactory {
-
-    public static final String DEFAULT_ENTITY_UNIT_NAME = "Model";
-    public static final String ENTITY_MANAGER_FACTORY_ID = "entityManagerFactory";
+//    public static final String DEFAULT_ENTITY_UNIT_NAME = "Model";
+//    public static final String ENTITY_MANAGER_FACTORY_ID = "entityManagerFactory";
 
     @Override
-    public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
-        ODataJPAContext oDataJPAContext = this.getODataJPAContext();
-        EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
+    public ODataService createService(ODataContext ctx) throws ODataException {
 
-        oDataJPAContext.setEntityManagerFactory(factory);
-        oDataJPAContext.setPersistenceUnitName(DEFAULT_ENTITY_UNIT_NAME);
-//        oDataJPAContext.setJPAEdmExtension(new JPAEdmExtension());
-        ODataContextUtil.setODataContext(oDataJPAContext.getODataContext());
+        EdmProvider edmProvider = new MyEdmProvider();
+        ODataSingleProcessor singleProcessor = new MyODataSingleProcessor();
 
-        return oDataJPAContext;
+        return createODataSingleProcessorService(edmProvider, singleProcessor);
     }
+
+//    @Override
+//    public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
+//        ODataJPAContext oDataJPAContext = this.getODataJPAContext();
+//        EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
+//
+//        oDataJPAContext.setEntityManagerFactory(factory);
+//        oDataJPAContext.setPersistenceUnitName(DEFAULT_ENTITY_UNIT_NAME);
+////        oDataJPAContext.setJPAEdmExtension(new JPAEdmExtension());
+//        ODataContextUtil.setODataContext(oDataJPAContext.getODataContext());
+//
+//        return oDataJPAContext;
+//    }
 }
 
 

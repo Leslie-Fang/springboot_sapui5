@@ -54,9 +54,8 @@ https://www.penninkhof.com/2016/02/openui5-boilerplate-based-on-olingo-jpa-and-s
 https://blogs.sap.com/2017/11/27/how-to-create-olingo-v2.0-odata-service-with-spring-cloud-in-cloudfoundry/
 
 
-Current State:
-Enable JPA
-Failed to provided odata service:
-visit http://localhost:8080/odata.svc/
-500
+successfully eanble odata:
+http://localhost:8080/MyODataSample.svc
+http://localhost:8080/MyODataSample.svc/$metadata
+http://localhost:8080/MyODataSample.svc/Cars
 

@@ -14,9 +14,7 @@ import java.util.*;
 public class CxfServletRegister {
     @Bean
     public ServletRegistrationBean getODataServletRegistrationBean() {
-        ServletRegistrationBean odataServletRegistrationBean = new ServletRegistrationBean(new CXFNonSpringJaxrsServlet(), "/odata.svc/*");
-        //ServletRegistrationBean odataServletRegistrationBean = new ServletRegistrationBean(new CXFNonSpringJaxrsServlet());
-        //odataServletRegistrationBean.setUrlMappings(Arrays.asList("/odata.svc/*"));
+        ServletRegistrationBean odataServletRegistrationBean = new ServletRegistrationBean(new CXFNonSpringJaxrsServlet(), "/MyODataSample.svc/*");
         Map<String, String> initParameters = new HashMap<String, String>();
         initParameters.put("javax.ws.rs.Application", "org.apache.olingo.odata2.core.rest.app.ODataApplication");
         initParameters.put("org.apache.olingo.odata2.service.factory", "org.intel.dcg.leslie.utils.JPAServiceFactory");

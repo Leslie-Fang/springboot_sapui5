@@ -23,4 +23,8 @@ public class testsapui {
     public String indexTest2() {
         return "/test/mockServer.html";
     }
+    @RequestMapping(value="/index",method = RequestMethod.GET)
+    public String indexTest3() {
+        return "/index.html";
+    }
 }
