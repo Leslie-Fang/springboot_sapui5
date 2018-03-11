@@ -55,6 +55,8 @@ public class MyEdmProvider extends EdmProvider {
 
     private static final String FUNCTION_IMPORT = "NumberOfCars";
 
+    //private static final String NAMESPACE2 = "org.apache.olingo.odata2.ODataCars";
+
     @Override
     public List<Schema> getSchemas() throws ODataException {
         List<Schema> schemas = new ArrayList<Schema>();

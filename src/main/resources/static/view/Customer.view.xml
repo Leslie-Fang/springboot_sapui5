@@ -3,15 +3,15 @@
         xmlns="sap.m"
         xmlns:mvc="sap.ui.core.mvc">
     <List
-            id="carList"
+            id="customerList"
             class="sapUiResponsiveMargin"
             width="auto"
             items="{
-                 path : 'car>/Cars'
+                 path : 'car>/Customers'
             }" >
         <items>
             <ObjectListItem
-                    title="{car>Model} x {car>Price}" />
+                    title="{car>Id} x {car>Name}" />
         </items>
     </List>
 </mvc:View>

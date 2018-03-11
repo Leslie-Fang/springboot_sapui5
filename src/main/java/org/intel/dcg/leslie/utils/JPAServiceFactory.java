@@ -15,30 +15,16 @@ import org.apache.olingo.odata2.api.processor.ODataSingleProcessor;
 
 public class JPAServiceFactory extends ODataServiceFactory {
 
-//    public static final String DEFAULT_ENTITY_UNIT_NAME = "Model";
-//    public static final String ENTITY_MANAGER_FACTORY_ID = "entityManagerFactory";
-
     @Override
     public ODataService createService(ODataContext ctx) throws ODataException {
 
-        EdmProvider edmProvider = new MyEdmProvider();
-        ODataSingleProcessor singleProcessor = new MyODataSingleProcessor();
-
+//        EdmProvider edmProvider = new MyEdmProvider();
+//        ODataSingleProcessor singleProcessor = new MyODataSingleProcessor();
+        EdmProvider edmProvider = new MyEdmProviderCustomer();
+        ODataSingleProcessor singleProcessor = new MyODataSingleProcessorCustomer();
         return createODataSingleProcessorService(edmProvider, singleProcessor);
     }
 
-//    @Override
-//    public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
-//        ODataJPAContext oDataJPAContext = this.getODataJPAContext();
-//        EntityManagerFactory factory = (EntityManagerFactory) SpringContextsUtil.getBean(ENTITY_MANAGER_FACTORY_ID);
-//
-//        oDataJPAContext.setEntityManagerFactory(factory);
-//        oDataJPAContext.setPersistenceUnitName(DEFAULT_ENTITY_UNIT_NAME);
-////        oDataJPAContext.setJPAEdmExtension(new JPAEdmExtension());
-//        ODataContextUtil.setODataContext(oDataJPAContext.getODataContext());
-//
-//        return oDataJPAContext;
-//    }
 }
 
 

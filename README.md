@@ -69,6 +69,17 @@ http://localhost:8080/MyODataSample.svc/Cars?$format=json
 next step:
 1. Done: learn odata fake car data
 2. Done: bind car odata to the sapui table
-3. use JPA to provide odata service
-4. bind JPA odata service into the openui5 table
+http://localhost:8080/MyODataSample.svc
+http://localhost:8080/MyODataSample.svc/Cars
+
+3. Done: New fake data: datastore2
+   New edmprovider:  MyEdmProviderCustomer.java
+   New SingleProcessor: MyODataSingleProcessorCustomer.java
+   visit: http://localhost:8080/sap/test 第三个图表
+   http://localhost:8080/MyODataSample.svc
+   http://localhost:8080/MyODataSample.svc/Customers
+   http://localhost:8080/MyODataSample.svc/Customers(1)
+   
+4. use JPA to provide odata service
+5. bind JPA odata service into the openui5 table
 
