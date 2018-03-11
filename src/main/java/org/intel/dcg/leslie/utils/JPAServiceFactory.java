@@ -21,7 +21,8 @@ public class JPAServiceFactory extends ODataServiceFactory {
 //        EdmProvider edmProvider = new MyEdmProvider();
 //        ODataSingleProcessor singleProcessor = new MyODataSingleProcessor();
         EdmProvider edmProvider = new MyEdmProviderCustomer();
-        ODataSingleProcessor singleProcessor = new MyODataSingleProcessorCustomer();
+//        ODataSingleProcessor singleProcessor = new MyODataSingleProcessorCustomer();
+        ODataSingleProcessor singleProcessor = new MyODataSingleProcessorCustomerJPA();
         return createODataSingleProcessorService(edmProvider, singleProcessor);
     }
 

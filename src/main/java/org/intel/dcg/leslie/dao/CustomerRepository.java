@@ -7,5 +7,5 @@ import org.intel.dcg.leslie.domain.Customer;
 
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
-    List<Customer> findByLastName(String lastName);
+    List<Customer> findByName(String name);
 }

@@ -26,8 +26,8 @@ public class DataStore2 {
     private Map<String, Object> createCustomer(int carId, String name) {
         Map<String, Object> data = new HashMap<String, Object>();
 
-        data.put("Id", carId);
-        data.put("Name", name);
+        data.put("id", carId);
+        data.put("name", name);
 
         return data;
     }

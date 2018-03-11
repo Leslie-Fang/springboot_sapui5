@@ -32,11 +32,9 @@ public class Application extends SpringBootServletInitializer {
         return (args) -> {
             // save a couple of customers
             if (repository.count() == 0){
-                repository.save(new Customer("Jack", "Bauer"));
-                repository.save(new Customer("Chloe", "O'Brian"));
-                repository.save(new Customer("Kim", "Bauer"));
-                repository.save(new Customer("David", "Palmer"));
-                repository.save(new Customer("Michelle", "Dessler"));
+                repository.save(new Customer("Jack"));
+                repository.save(new Customer("Leslie"));
+                repository.save(new Customer("Mango"));
 
             }
             // fetch all customers
@@ -55,10 +53,10 @@ public class Application extends SpringBootServletInitializer {
             log.info("");
 
             // fetch customers by last name
-            log.info("Customer found with findByLastName('Bauer'):");
+            log.info("Customer found with findByLastName('Leslie'):");
             log.info("--------------------------------------------");
-            for (Customer bauer : repository.findByLastName("Bauer")) {
-                log.info(bauer.toString());
+            for (Customer leslie : repository.findByName("Leslie")) {
+                log.info(leslie.toString());
             }
             log.info("");
         };

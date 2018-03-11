@@ -11,7 +11,7 @@
             }" >
         <items>
             <ObjectListItem
-                    title="{car>Id} x {car>Name}" />
+                    title="{car>id} x {car>name}" />
         </items>
     </List>
 </mvc:View>

@@ -54,12 +54,12 @@ public class MyEdmProviderCustomer extends EdmProvider {
             if (ENTITY_TYPE_1_1.getName().equals(edmFQName.getName())){
                 //Properties
                 List<Property> properties = new ArrayList<Property>();
-                properties.add(new SimpleProperty().setName("Id").setType(EdmSimpleTypeKind.Int32).setFacets(new Facets().setNullable(false)));
-                properties.add(new SimpleProperty().setName("Name").setType(EdmSimpleTypeKind.String));
+                properties.add(new SimpleProperty().setName("id").setType(EdmSimpleTypeKind.Int32).setFacets(new Facets().setNullable(false)));
+                properties.add(new SimpleProperty().setName("name").setType(EdmSimpleTypeKind.String));
 
                 //Key
                 List<PropertyRef> keyProperties = new ArrayList<PropertyRef>();
-                keyProperties.add(new PropertyRef().setName("Id"));
+                keyProperties.add(new PropertyRef().setName("id"));
                 Key key = new Key().setKeys(keyProperties);
 
                 return new EntityType().setName(ENTITY_TYPE_1_1.getName())
